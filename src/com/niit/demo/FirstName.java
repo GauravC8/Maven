@@ -31,7 +31,7 @@ public class FirstName extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("Text/Html");
-		PrintWriter out=response.getWriter();
+		PrintWriter out=response.getWriter(); //send response to client
 		String FirstName=request.getParameter("firstname");
 		String LastName=request.getParameter("lastname");
 		out.println("Your First Name : " + FirstName + "<br>");
