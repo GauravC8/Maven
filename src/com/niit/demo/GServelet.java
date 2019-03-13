@@ -29,22 +29,27 @@ public class GServelet extends GenericServlet {
 	/**
 	 * @see Servlet#init(ServletConfig)
 	 */
+	@Override
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
-		System.out.println("Servelet : "+ this.getServletInfo() + " has started ");
+		//System.out.println("Servelet : "+ this.getServletInfo() + " has started ");
+		System.out.println("Servelet : "+ config.getServletName() + " has started ");
 	}
 
 	/**
 	 * @see Servlet#destroy()
 	 */
+	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
-		System.out.println("Servelet : "+ this.getServletInfo() + " has destroyed ");
+		//System.out.println("Servelet : "+ this.getServletInfo() + " has destroyed ");
+		System.out.println("Servelet : " + this.getServletName() + " has destroyed ");
 	}
 
 	/**
 	 * @see Servlet#service(ServletRequest request, ServletResponse response)
 	 */
+	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
