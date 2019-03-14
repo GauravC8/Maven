@@ -7,7 +7,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -47,7 +46,7 @@ public class UserServlet2 extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		ServletContext context = getServletContext();
+		//ServletContext context = getServletContext();
 		PrintWriter out = response.getWriter();
 		//Object obj = context.getAttribute("userId");
 	/*	try {
