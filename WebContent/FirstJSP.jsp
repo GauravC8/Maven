@@ -8,12 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<font size="3" color="pink"> 
-	<%
+	<font size="3" color="pink"> <%
  	for (int num = 1; num <= 10; num++)
  		out.println("Welcome to JSP " + num + "<br>");
- 	%>
-	Todays date : <%= (new java.util.Date()).toString()%>
+ 	%> Todays date : <%= (new java.util.Date()).toString()%>
 	</font>
 </body>
 </html>

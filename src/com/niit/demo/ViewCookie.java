@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_OUT;
-
 /**
  * Servlet implementation class ViewCookie
  */

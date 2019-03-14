@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<%!String[] names = { "Green", "Cyan", "Orange", "Red", "Yellow" };%>
+<%! String[] names = { "Green", "Cyan", "Orange", "Red", "Yellow" };%>
 <body>
 	<h1>List of Colors</h1>
 	<table>

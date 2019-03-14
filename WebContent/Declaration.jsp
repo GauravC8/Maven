@@ -28,16 +28,20 @@
 <body>
 	<h1>Calculation Circle Parameters</h1>
 	<b>Radius of Circle</b>
-	<%=getRadius()%> cm <br>
+	<%=getRadius()%>
+	cm
+	<br>
 	<b>Diameter of circle : </b>
-	<%=getDiameter()%> cm
+	<%=getDiameter()%>
+	cm
 	<br>
 	<b>Area of Circle is: </b>
-	<%=getArea()%> <sup>2</sup>
+	<%=getArea()%>
+	<sup>2</sup>
 	<br>
 	<b>Circumference of circle:</b>
 	<%=getCircumference()%>
 	cm
 	<br>
-	</body>
+</body>
 </html>
