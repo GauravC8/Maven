@@ -24,7 +24,9 @@
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysqljdbc", "root", "root");
 			PreparedStatement s = con.prepareStatement(
-					"Update CustomerRegister set Password=?,ConfirmPassword=?,FirstName=?,LastName=?,Gender=?,Age=?,TelephoneNo=?,MobileNo=?,Email=?,Address=?,Pincode=?,AnnualIncome=? where UserId=?");
+					"insert into CustomerRegister values(?,?,?,?,?,?,?,?,?,?,?,?);
+			/* PreparedStatement s = con.prepareStatement(
+					"Update CustomerRegister set Password=?,ConfirmPassword=?,FirstName=?,LastName=?,Gender=?,Age=?,TelephoneNo=?,MobileNo=?,Email=?,Address=?,Pincode=?,AnnualIncome=? where UserId=?"); */
 			s.setString(1, Password);
 			s.setString(2, Confirm);
 			s.setString(3, FirstName);
