@@ -12,7 +12,7 @@
             <jsp:param name="shopstop" value="Shop Stop "/>
         </jsp:include>
         <h2 align="center">Shop Stop Product List</h2>
-        <table width="80%"  border="0" align="center">
+        <table width="80%" align="center">
             <tr>
                 <td>Product Id </td>
                 <td>Product Name </td>
@@ -57,6 +57,5 @@
                 Please enter the total amount : <input type="text" name="txtamount"/><br />
                 <input type=submit value="submit"/>
             </form>
-        </p>
     </body>
 </html>

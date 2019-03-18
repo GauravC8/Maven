@@ -1,0 +1,7 @@
+JUnit Testing
+Unit- a class
+
+TDD: test driven development
+----first write the test than Add functionality to pass the test.
+
+Prototyping:
