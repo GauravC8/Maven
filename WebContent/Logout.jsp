@@ -7,8 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% 
+<%
+session.setAttribute("userid", null);
+session.invalidate();
+/* response.sendRedirect("Login.html"); */
 out.println("<h3 align='center'>Logout Successfully. Visit Again! </h3> ");
 %>
+<%-- <% 
+out.println("<h3 align='center'>Logout Successfully. Visit Again! </h3> ");
+%> --%>
 </body>
 </html>

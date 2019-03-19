@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Login.HTML</title>
-</head>
-<body>
-	<!-- HiddenFieldServlet.java   second.java -->
-	<form method="post" action="Login.jsp">
-		Name:<input type="text" name="username" /><br />
-		Password:<input type="password" name="password" /><br />
-		 <input type="submit" value="LogIn">
-	</form>
-</body>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Login</title>
+		<style>
+​
+			td{
+				padding:15px;
+				width:50%;
+			}
+			fieldset{
+				width:60%;
+				height:80%;
+				align:center;
+			}
+		</style>
+	</head>
+	<body  >
+		<div align="center">
+		<fieldset>
+			<form action="Login.jsp" method="post">
+			<h2 align="center">SHOP STOP</h2>
+			<table>
+				<tr ><td>USER ID</td><td ><input type="text" name="userId" width="100px"></td></tr>
+				<tr><td>PASSWORD</td><td ><input type="password" name="password" width="100px"></td></tr>
+				<tr><td></td><td><button type="submit">LOGIN</button></td></tr>
+			</table>
+			</form>
+		</fieldset>
+		</div>
+	</body>
 </html>

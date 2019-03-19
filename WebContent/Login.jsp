@@ -8,21 +8,21 @@
 </head>
 <body>
 <%
-ResultSet rs;
-String user=new String("");
-String pass=new String("");
-response.setContentType("text/html");
-try {
-	Class.forName("com.mysql.jdbc.Driver");
-	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysqljdbc", "root", "root");
-	Statement s = con.createStatement();
-	s.executeQuery("select UserId,Password from User");
-	rs = s.getResultSet();
+try{
+	String userid = request.getParameter("userId");    
+    String pwd = request.getParameter("password");
+    String Name;
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysqljdbc","root", "root");
+    Statement st = con.createStatement();
+    ResultSet rs;
+    rs = st.executeQuery("select * from customerregister where UserId='" + userid + "' and Password='" + pwd + "'");
+    /* 
 	while (rs.next ()){
-		user=rs.getString("UserId");
-		pass=rs.getString("Password");
+		String user=rs.getString("UserId");
+		String pass=rs.getString("Password");
 	}
-	if(user.equals(request.getParameter("username")) && pass.equals(request.getParameter("password")))
+	 if(user.equals(request.getParameter("username")) && pass.equals(request.getParameter("password")))
 	{
 	out.println("User is Valid");
 	request.getSession(true);
@@ -30,11 +30,21 @@ try {
 	response.sendRedirect("Welcome.jsp");
 	}else{
 		out.println("You are not a Valid User");}
-	}catch(Exception e)
+	} */
+    if (rs.next()) {
+        request.getSession();
+    	session.setMaxInactiveInterval(60);
+        session.setAttribute("userId", userid);
+        session.setAttribute("Name", rs.getString("FirstName"));
+        response.sendRedirect("Welcome.jsp");
+    } else {
+        out.println("Invalid password <a href='Login.html'>try again</a>");
+    }
+}catch(Exception e)
 {
 	e.printStackTrace();
 }
-%>
+ %>
 
 </body>
 </html>

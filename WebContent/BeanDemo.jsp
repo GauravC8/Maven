@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<jsp:useBean id="BeanId" class="SimpleBean" scope="application"/>
+<jsp:useBean id="BeanId" class="BeanClass.SimpleBean" scope="application"/>
 <jsp:setProperty property="name" name="BeanId" value="Raj"/>
 <jsp:setProperty property="age" name="BeanId" value="35"/>
 </head>
