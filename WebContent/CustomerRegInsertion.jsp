@@ -7,7 +7,7 @@
 </head>
 <body>
 	<%
-		Integer UserId = Integer.parseInt(request.getParameter("txtuserid"));
+	
 		String Password = request.getParameter("txtpassword");
 		String Confirm = request.getParameter("txtconfirm");
 		String FirstName = request.getParameter("txtfirstname");
@@ -23,8 +23,8 @@
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysqljdbc", "root", "root");
-			PreparedStatement s = con.prepareStatement(
-					"Update CustomerRegister set Password=?,ConfirmPassword=?,FirstName=?,LastName=?,Gender=?,Age=?,TelephoneNo=?,MobileNo=?,Email=?,Address=?,Pincode=?,AnnualIncome=? where UserId=?");
+			PreparedStatement s=con.prepareStatement
+		    		("insert into customerregistration(Password,ConfirmPassword,FirstName,LastName,Gender,Age,TelephoneNo,MobileNo,Email,Address,Pincode,AnnualIncome) values(?,?,?,?,?,?,?,?,?,?,?,?)");
 			s.setString(1, Password);
 			s.setString(2, Confirm);
 			s.setString(3, FirstName);
@@ -39,8 +39,8 @@
 			s.setString(12, AnnualIncome);
 			s.executeUpdate();
 
-			out.println("<font color=red size=7>User Details Successfully Updated </font><BR/><BR/>");
-			out.println("Your UserId is : " + UserId + "<BR/>");
+			out.println("<font color=red size=7>User Details Successfully Inserted </font><BR/><BR/>");
+			
 			out.println("Your Password is : " + Password + "<BR/>");
 			out.println("Your Confirm Password is : " + Confirm + "<BR/>");
 			out.println("Your First Name is : " + FirstName + "<BR/>");

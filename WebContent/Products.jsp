@@ -12,7 +12,7 @@
             <jsp:param name="shopstop" value="Shop Stop "/>
         </jsp:include>
         <h2 align="center">Shop Stop Product List</h2>
-        <table width="80%" align="center">
+        <table >
             <tr>
                 <td>Product Id </td>
                 <td>Product Name </td>

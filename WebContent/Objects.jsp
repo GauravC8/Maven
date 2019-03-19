@@ -14,7 +14,7 @@ user.setPassword("pass123");
 <b>Accessing Beans using EL :</b><br>
 ${'${'}user.username } = ${user.username }<br>
 ${'${'}user.password } = ${user.password }<br>
-<jsp:useBean id="list" class="java.util.ArrayList"/>
+<jsp:useBean id="list" class="java.util.ArrayList<>"/>
 <% 
 	list.add("item1");
 	list.add("item2");

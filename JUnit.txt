@@ -4,4 +4,33 @@ Unit- a class
 TDD: test driven development
 ----first write the test than Add functionality to pass the test.
 
-Prototyping:
+Asserts: expected output comapre with the output received
+Test setup and teardown: 
+Exception testing'
+test Suites :collection of many test cases
+Parameterised testing : workd s
+Rules
+Integration with Built System
+
+
+Assert methods:
+	 assertEquals()
+	 assertFalse()
+	 assertNotNull()
+	 assertNull()
+	 assertTrue()
+	 fail()
+	
+Annotation: meta tags
+	@Test @Test(timeout=1000)
+	@Before
+	@After
+	@BeforeClass  method should be static
+	@AfterClass   method should be static
+	@Ignore
+	
+Assert Class Methods
+
+	
+Performance testing
+Integration testing done using testNG

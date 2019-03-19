@@ -15,11 +15,13 @@ Here are some basic comparison
 Is 1 less than 2? ${1<2 }<br>
 Does 5 equal 5? ${5==5 }<br>
 Is 6  greater than 7? ${6 gt 7}<br>
-<p>Math</p>
+Math
 6+7 = ${6+7} <br>
 8x9 = ${8*9} <br>
 <hr>
 You appear to be using following browser:<br>
 ${header["user-agent"] }
+</p>
+
 </body>
 </html>
